@@ -89,9 +89,9 @@ public class StoreController {
                     Duration elapsed = Duration.between(orderTime, LocalDateTime.now());
 
                     // Update text color based on elapsed time
-                    if (elapsed.toMillis() > 5000 && elapsed.toMillis() <= 10000) {
+                    if (elapsed.toMillis() > 50000 && elapsed.toMillis() <= 100000) {
                         timeText.setFill(Color.YELLOW);
-                    } else if (elapsed.toMillis() > 10000) {
+                    } else if (elapsed.toMillis() > 100000) {
                         timeText.setFill(Color.RED);
                     } else {
                         timeText.setFill(Color.GREEN);
